@@ -11,5 +11,6 @@ RUN pip install -r requirements.txt
 # Copy the rest of the backend files
 COPY . .
 
+EXPOSE 3000
 # Start the Django development server
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:3000"]
