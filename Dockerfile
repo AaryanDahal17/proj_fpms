@@ -10,6 +10,12 @@ RUN pip install -r requirements.txt
 
 # Copy the rest of the backend files
 COPY . .
+
+# Run migrations and start the server using a startup script
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
+
 EXPOSE 8000
-# Start the Django development server
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+
+# Set the entry point to the startup script
+ENTRYPOINT ["/docker-entrypoint.sh"]
