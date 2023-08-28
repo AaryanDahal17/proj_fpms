@@ -26,14 +26,7 @@ educational institutions
 
 - Clone this repository: 
 
-```git clone git@github.com:parikshitadhikari/software-project-fpms.git```
-
-- Navigate into the project directory REST-REACT-FPMS-main and clear all pycache if available (you can also run the following commands):
-
-```find . -name "*.pyc" -delete```
-
-```find . -type d -name "__pycache__" -exec rm -r {} +```
-
+```git clone git@github.com:parikshitadhikari/proj_fpms.git```
 
 ### Method 1 (Using Docker):
 
@@ -41,13 +34,9 @@ educational institutions
 
 - Open terminal and run the following commands: 
 
-```docker pull node:14-alpine```
-
 ```docker pull python:3.9```
 
-- Now navigate into project's root directory (directory containing docker-compose.yml)
-
-- Run the command: ```docker-compose up```. If any permission issues are encountered, run the command using ```sudo```.
+- Now, in the root directory, run the command: ```docker build -t image-name``` and ```docker run -p 8000:8000 image-name```. If any permission issues are encountered, run the command using ```sudo```.
 
 - If successful, you can view the project at: http://localhost:8000/ or http://127.0.0.1:8000/
 
@@ -55,11 +44,9 @@ Note: You need to have docker app running in the background!
 
 ### Method 2 (Traditional way):
 
-You need to have Python and Node installed! Suitable node version is v14s or v16s. You can use *nvm* or *nvs (if windows)* to switch between node versions.
+You need to have Python and Node installed! Suitable python version is 3.9 and suitable node version is v14s or v16s. You can use *nvm* or *nvs (if windows)* to switch between node versions.
 
-- Navigate to *frontend* (inside proj_fpms) directory, and switch the node versions to 14s or 16s and run the commands:  ```npm install``` and ```npm start```.
-
-- Now, navigate to *proj_fpms* directory, and run the following commands:  
+- In the root, and run the following commands:  
 
 ```pip install -r requirements.txt```
 
