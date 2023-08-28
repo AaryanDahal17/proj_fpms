@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-1^9dkq5qe_j8rtu+itx473y!4mnkr-u)g&3tji*(!v9z!=7mh!
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'xcknzmusaomdtev.bct.itclub.pp.ua'
+    'dcjvahzdhzfuxhm.bct.itclub.pp.ua/'
 ]
 
 
