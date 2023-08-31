@@ -32,7 +32,7 @@ educational institutions
 
 - Install [Docker](https://www.docker.com/).
 
-- Open terminal and run the following commands: 
+- Open terminal and run the following command: 
 
 ```docker pull python:3.9```
 
@@ -44,9 +44,9 @@ Note: You need to have docker app running in the background!
 
 ### Method 2 (Traditional way):
 
-You need to have Python and Node installed! Suitable python version is 3.9 and suitable node version is v14s or v16s. You can use *nvm* or *nvs (if windows)* to switch between node versions.
+You need to have Python installed! Suitable python version is 3.9.
 
-- In the root, and run the following commands:  
+- In the root directory run the following commands:  
 
 ```pip install -r requirements.txt```
 
